@@ -96,10 +96,10 @@ const Timberland = products.filter(product => product.category === "Timberland")
 console.log (Timberland);
 const Salomon = products.filter(product => product.category === "Salomon")
 console.log (Salomon);
-const Under Armour = products.filter(product => product.category === "Under Armour")
-console.log (Under Armour);
-const New Balance = products.filter(product => product.category === "New Balance")
-console.log (New Balance);
+const UnderArmour = products.filter(product => product.category === "Under Armour")
+console.log (UnderArmour);
+const NewBalance = products.filter(product => product.category === "New Balance")
+console.log (NewBalance);
 
 function cart() {
     let cart = [];

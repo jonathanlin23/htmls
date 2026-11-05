@@ -1,0 +1,42 @@
+html,
+body,
+*{
+    font-size:large;
+    margin:0;
+    padding:0;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.Herotop{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.cards{
+    width:cover;
+    flex-wrap: wrap;
+}
+
+.cardsB{
+    width: 20rem;
+    height: 40rem;
+    margin: 5rem;
+    text-align: center;
+    align-items: center;
+    color: rgb(0,0,0,0.4);
+}
