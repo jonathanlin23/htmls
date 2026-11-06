@@ -1,5 +1,5 @@
 const products = [
-    {name: "Black Basketball Shoes", category: "Jordan", price: 120 },
+    {name: "Black Basketball Shoes", category: "Jordan", price: 120 }, 
     {name: "White Running Shoes", category: "Adidas", price: 110 },
     {name: "Red Soccer Cleats", category: "Nike", price: 100 },
     {name: "Blue Tennis Shoes", category: "Puma", price: 85 },
@@ -25,15 +25,23 @@ let shoppingCart = []; //shopping cart
 
 //to select HTML contaienrs
 const container = document.querySelector(".container");
+
 const cartContainer = document.querySelector(".cart-container");
+
 const total = document.querySelector("#total");
+
 
 // to display products
 function inject(item){
+   
     container.insertAdjacentHTML(
+       
         "beforeend",
+       
         `<div class="card">
+       
         <h2>${item.name}</h2>
+       
         <p>Brand: ${item.category}</p>
         <p>Price: $${item.price}</p>
         <button class ="add-btn">Add to Cart </button>
@@ -114,8 +122,5 @@ filterButtons.forEach(function(button){
     });
 });
 
-//show all products
-displayProducts(products);
-
-//show empty cart at first
-displayCart();
+displayProducts(products); //show all products
+displayCart(); //show empty cart at first
