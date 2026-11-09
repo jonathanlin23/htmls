@@ -1,0 +1,12 @@
+.card {
+  background-color: blue;
+  width: 350px;
+  height: 450px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
