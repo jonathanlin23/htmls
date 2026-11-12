@@ -1,28 +1,27 @@
 const products = [
-    {name: "Black Basketball Shoes", category: "Jordan", price: 120 },
-    {name: "White Running Shoes", category: "Adidas", price: 110 },
-    {name: "Red Soccer Cleats", category: "Nike", price: 100 },
-    {name: "Blue Tennis Shoes", category: "Puma", price: 85 },
-    {name: "Black Boots", category: "Timberland", price: 160 },
-    {name: "White Sneakers", category: "Reebok", price: 75 },
-    {name: "Gray Hiking Shoes", category: "Salomon", price: 140 },
-    {name: "Green Sneakers", category: "New Balance", price: 100 },
-    {name: "Pink Basketball Shoes", category: "Under Armour", price: 90 },
-    {name: "Brown Football Cleats", category: "Nike", price: 95 },
-    {name: "Black Dress Shoes", category: "Clarks", price: 110 },
-    {name: "Brown Loafers", category: "Clarks", price: 100 },
-    {name: "Black Sneakers", category: "Reebok", price: 70 },
-    {name: "Black Running Shoes", category: "Adidas", price: 140 },
-    {name: "White Hiking Shoes", category: "Salomon", price: 140 },
-    {name: "Purple Basketball Shoes", category: "Jordan", price: 130 },
-    {name: "Brown Dress Shoes", category: "Clarks", price: 115 },
-    {name: "Tan Boots", category: "Timberland", price: 190 },
-    {name: "Pink Football Cleats", category: "Adidas", price: 110 },
-    {name: "Yellow Golf Shoes", category: "Jordan", price: 120 },
+    {name: "Black Basketball Shoes", category: "Jordan", price: 120, image: "images/jordan.jpg"},
+    {name: "White Running Shoes", category: "Adidas", price: 110, image: "images/adidas-running.jpg"},
+    {name: "Red Soccer Cleats", category: "Nike", price: 100, image: "images/nike-red-cleats.jpg"},
+    {name: "Blue Sneakers", category: "Puma", price: 85, image: "images/puma-blue-sneakers.jpg"},
+    {name: "Black Boots", category: "Timberland", price: 160, image: "images/timberland-black.jpg"},
+    {name: "White Sneakers", category: "Reebok", price: 75, image: "images/reebok-sneakers-white.jpg"},
+    {name: "Gray Hiking Shoes", category: "Salomon", price: 140, image: "images/grey-hiking.avif"},
+    {name: "Green Sneakers", category: "New Balance", price: 100, image: "images/nb-green1.jpeg"},
+    {name: "Pink Basketball Shoes", category: "Under Armour", price: 90, image: "images/curry-1.jpeg"},
+    {name: "Brown Football Cleats", category: "Nike", price: 95, image: "images/brown-cleats-nike.jpeg"},
+    {name: "Black Dress Shoes", category: "Clarks", price: 110,image: "images/dress-shoes.jpeg"},
+    {name: "White Adidas Sneakers", category: "Adidas", price: 100,image: "images/sambas.webp"},
+    {name: "Black Sneakers", category: "Reebok", price: 70, image: "images/reebok14.avif" },
+    {name: "Black Running Shoes", category: "Adidas", price: 140, image: "images/adidas-1.webp"},
+    {name: "White Hiking Shoes", category: "Salomon", price: 140, image: "images/salomon19.webp" },
+    {name: "Purple Basketball Shoes", category: "Jordan", price: 130, image: "images/jordan-purple.webp" },
+    {name: "Brown Dress Shoes", category: "Clarks", price: 115, image: "images/brown-clarks.jpeg" },
+    {name: "Tan Boots", category: "Timberland", price: 190, image: "images/timberland-tan.webp" },
+    {name: "Pink Football Cleats", category: "Adidas", price: 110, image: "images/pink-cleats.webp" },
+    {name: "Yellow Sneakers", category: "Nike", price: 120, image: "images/yellow-nike.webp" },
 ];
 
 let shoppingCart = []; //shopping cart
-
 //to select HTML contaienrs
 const container = document.querySelector(".container");
 const cartContainer = document.querySelector(".cart-container");
@@ -33,6 +32,7 @@ function inject(item){
     container.insertAdjacentHTML(
         "beforeend",
         `<div class="card">
+        <img src="${item.image}" alt="${item.name}">
         <h2>${item.name}</h2>
         <p>Brand: ${item.category}</p>
         <p>Price: $${item.price}</p>
@@ -119,3 +119,4 @@ displayProducts(products);
 
 //show empty cart at first
 displayCart();
+
