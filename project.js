@@ -17,7 +17,7 @@ const products = [
     {name: "Purple Basketball Shoes", category: "Jordan", price: 130, image: "images/jordan-purple.webp" },
     {name: "Brown Dress Shoes", category: "Clarks", price: 115, image: "images/brown-clarks.jpeg" },
     {name: "Tan Boots", category: "Timberland", price: 190, image: "images/timberland-tan.webp" },
-    {name: "Pink Football Cleats", category: "Adidas", price: 110, image: "images/pink-cleats.webp" },
+    {name: "Pink Football Cleats", category: "Nike", price: 110, image: "images/pink-cleats.webp" },
     {name: "Yellow Sneakers", category: "Nike", price: 120, image: "images/yellow-nike.webp" },
 ];
 
